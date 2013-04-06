@@ -1,7 +1,4 @@
 Heritage::Application.routes.draw do
-  resources :albums
-
-
   devise_for :views
 
   devise_for :users
