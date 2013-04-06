@@ -11,6 +11,7 @@
 
 <% @albums.each do |album| %>
   <tr>
+    <td><%= image_tag album.image(:medium) %></td>
     <td><%= album.name %></td>
     <td><%= album.description %></td>
     <td><%= link_to 'Show', album %></td>
