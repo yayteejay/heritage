@@ -11,11 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130406143752) do
+=======
+ActiveRecord::Schema.define(:version => 20130406022433) do
+>>>>>>> parent of 170114e... Add User To Album
 
   create_table "albums", :force => true do |t|
     t.string   "name"
     t.string   "description"
+<<<<<<< HEAD
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
     t.integer  "user_id"
@@ -23,9 +28,11 @@ ActiveRecord::Schema.define(:version => 20130406143752) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+=======
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+>>>>>>> parent of 170114e... Add User To Album
   end
-
-  add_index "albums", ["user_id"], :name => "index_albums_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

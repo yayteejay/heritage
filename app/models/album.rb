@@ -1,4 +1,5 @@
 class Album < ActiveRecord::Base
+<<<<<<< HEAD
   attr_accessible :description, :name, :image
   belongs_to :user
   has_attached_file :image, styles: { medium: "320x240>"}
@@ -10,4 +11,10 @@ class Album < ActiveRecord::Base
 
 
 
+=======
+  attr_accessible :description, :name
+
+  validates :description, presence: true
+  validates :name, presence: true
+>>>>>>> parent of 170114e... Add User To Album
 end
